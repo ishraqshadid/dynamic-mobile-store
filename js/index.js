@@ -37,7 +37,8 @@ const placeOrder = ()=>{
         alert ("Your cart is empty. Please Buy first..!")
     } else {
         alert ("Congratulations, order successfull! Total bill is:" + cartTotal +"Taka")
-    }
+    };
+    clearCart();
 }
 
 for ( const phone of phones) {
@@ -55,4 +56,5 @@ for ( const phone of phones) {
     `;
 
     container.appendChild(div);
+
 }
