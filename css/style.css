@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#phone-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding:50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+    #phone-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }
+
+.phone-card{
+    border: 1px solid#ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}  
+
+.phone-card:hover{
+    transform: translateY(-10px);
+}
+
+.phone-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #ff523b;
+    font-weight: bold;
+}
+
+button {
+    background-color: #ff523b;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
