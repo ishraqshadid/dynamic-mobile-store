@@ -2,12 +2,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
 }
-.sticky{text-align: center;
+.sticky{ 
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
     background: #ddd;
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-       }
+}
 #phone-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -58,3 +62,4 @@ button {
 
 
 }
+
